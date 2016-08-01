@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Game Title"
+                android:id="@+id/txtGam"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edGam"
+                android:layout_gravity="center_horizontal"
+                android:hint="New Game"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Game IDs"
+                android:id="@+id/txtGamId"
+                android:gravity="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edGamId1"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="ABCD"
+                    android:maxLength="4"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edGamId2"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="monospace"
+                    android:typeface="monospace"
+                    android:hint="00000000"
+                    android:maxLength="8"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:id="@+id/ldGam"
+                    android:text="Load"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Master Code"
+                android:id="@+id/txtGamMas"
+                android:gravity="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edGamMas"
+                android:typeface="monospace"
+                android:fontFamily="monospace"
+                android:layout_gravity="center_horizontal"
+                android:hint="00000000 00000001\n00000000 00000000\n00000000 00000000\n00000000 00000000"
+                android:maxLength="71"
+                android:inputType="textNoSuggestions|text|textMultiLine"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable Game"
+                android:id="@+id/enableGamBox"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:singleLine="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Jusrcheat</string>
+    <string name="action_settings">Settings</string>
+    <string name="fb_chfi">Choose File(s)</string>
+    <string name="fb_chfo">Choose Folder(s)</string>
+    <string name="done">Done</string>
+    <string name="fb_fold">This Folder</string>
+    <string name="fb_cread">Cannot be read!</string>
+    <string name="fb_add">Added</string>
+    <string-array name="enc_array">
+        <item>GBK</item>
+        <item>BIG5</item>
+        <item>Shift JIS</item>
+        <item>UTF-8</item>
+    </string-array>
+    <string-array name="item_array">
+        <item>Code</item>
+        <item>Folder</item>
+        <item>WiFi Code</item>
+    </string-array>
+
+</resources>
